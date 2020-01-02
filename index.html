@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Image De-Duplication tool</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Image De-Duplication tool</h1>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-xs-12">
+          <button id="party" class="btn btn-dark">Open</button>
+          <div id="spinner" class="spinner-border" role="status" style="vertical-align: middle; display: none">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 id="numFilesHeader" style="display: none">Number of Files: <span id="numFiles"></span></h2>
+          <h2 id="numDuplicateFilesHeader" style="display: none">Number of Duplicates: <span id="numDuplicateFiles"></span></h2 id="numDuplicateFiles">      
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+      require('./renderer.js');
+  </script>
+</html>
