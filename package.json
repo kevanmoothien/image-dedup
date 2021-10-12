@@ -9,7 +9,7 @@
   "author": "Kevan Moothien",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.1.7"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "electron-log": "^4.0.2",
